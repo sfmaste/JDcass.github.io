@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЖД Касса</title>
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+	<!-- Всплывающее окно -->
+	<div class="bacground">
+
+		<div class="modal_user">
+			<form class="modal_user_form">
+				<input class="user_form_input" type="text" placeholder="Логин"></input>
+				<input class="user_form_input" type="password" placeholder="Пароль"></input>
+				<a class="" href="user.html">Войти
+					<img src="img/icons/arrow_right.svg" alt="">
+				</a>
+			</form>
+		</div>
+
+	</div>
+	<!-- Шапка сайта -->
+	<header class="header">
+		<div class="header_container">
+			<div class="header_nav">
+				<a href="index.html" class="logo">
+					<img src="img/icons/logo.svg" alt="logo">
+					станция
+				</a>
+				<navbar class="navbar">
+					<ul class="menu">
+						<li>
+							<a href="search.html">Поиск кассы</a>
+						</li>
+						<li>
+							<a href="user.html">Кабинет</a>
+						</li>
+						<li>
+							<a href="#footer">Контакты</a>
+						</li>
+						<li>
+							<a href="#reviews">Отзывы</a>
+						</li>
+					</ul>
+				</navbar>
+			</div>
+
+			<div class="header_user">
+				<a href="#" class="gps">
+					<img src="img/icons/gps.svg" alt="gps">
+					Кассы
+				</a>
+				<a href="#" class="cart">
+					<img src="img/icons/cart.svg" alt="cart">
+				</a>
+				<a href="#" class="user">
+					<img src="img/icons/user.svg" alt="user">
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+
+		<!-- Главный экран -->
+
+		<div class="main">
+			<div class="main_photo">
+				<img src="img/photo/main.png" alt="train">
+			</div>
+			<div class="main_content">
+				<h1>
+					Билеты для вас каждый день
+				</h1>
+				<p>
+					Железнодорожный комплекс является связующим звеном единой экономической системы, обеспечивает
+					стабильную деятельность промышленных предприятий, своевременный подвоз жизненно важных грузов в
+					самые отдаленные уголки страны, а также является самым доступным транспортом для миллионов граждан.
+				</p>
+				<a href="#tickets">
+					Все билеты
+					<img src="img/icons/arrow_right.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="line"></div>
+
+
+		<!-- о нас	 -->
+
+		<div class="bacgruond_white">
+
+			<div class="about">
+				<div class="about_content">
+					<h4>О НАС</h4>
+					<h2>Мы меняемся для вас</h2>
+					<p>
+						Открытое акционерное общество «Российские железные дороги» входит в мировую тройку лидеров
+						железнодорожных компаний. Это определяют следующие факторы:
+					</p>
+					<ul>
+						<li>огромные объемы грузовых и пассажирских перевозок;</li>
+						<li>высокие финансовые рейтинги;</li>
+						<li>квалифицированные специалисты во всех областях железнодорожного транспорта;</li>
+						<li>большая научно-техническая база;</li>
+						<li>проектные и строительные мощности;</li>
+					</ul>
+				</div>
+				<div class="about_photo">
+					<img src="img/photo/about.png" alt="train">
+				</div>
+			</div>
+
+
+			<!-- касса -->
+
+			<div class="all_ticket">
+				<div class="c">
+					<h2>Касса</h2>
+				</div>
+				<div id="product-list" class="tickets">
+					<div class="product-card" data-id="1">
+						<img src="img/photo/moskva_samara.png" alt="Товар 1" class="product-image">
+						<h2>Москва-Самара</h2>
+						<p>Цена: 1500 ₽</p>
+						<button class="add-to-cart">Добавить в корзину</button>
+					</div>
+					<div class="product-card" data-id="2">
+						<img src="img/photo/orenburg_orel.png" alt="Товар 2" class="product-image">
+						<h2>Оренбург-Орел</h2>
+						<p>Стоимость: 2000 ₽</p>
+						<button class="add-to-cart">Добавить в корзину</button>
+					</div>
+					<div class="product-card" data-id="3">
+						<img src="img/photo/kazahstan_polsha.png" alt="Товар 3" class="product-image">
+						<h2>Казахстан-Польша</h2>
+						<p>Стоимость: 1500 ₽</p>
+						<button class="add-to-cart">Добавить в корзину</button>
+					</div>
+					<div class="product-card" data-id="4">
+						<img src="img/photo/kazan_omsk.png" alt="Товар 4" class="product-image">
+						<h2>Казань-Омск</h2>
+						<p>Стоимость билета: 7500 ₽</p>
+						<button class="add-to-cart">Добавить в корзину</button>
+					</div>
+					<div class="product-card" data-id="5">
+						<img src="img/photo/orsk_kirov.png" alt="Товар 5" class="product-image">
+						<h2>Орск-Киров</h2>
+						<p>Стоимость: 7500 ₽</p>
+						<button class="add-to-cart">Добавить в корзину</button>
+					</div>
+					<div class="product-card" data-id="6">
+						<img src="img/photo/smolensk_piter.png" alt="Товар 6" class="product-image">
+						<h2>Смоленск-Питер</h2>
+						<p>Стоимость: 7500 ₽</p>
+						<button class="add-to-cart">Добавить в корзину</button>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="order">
+				<h2>Корзина</h2>
+				<div id="cart" class="cart">
+					<ul id="cart-items" class="ul"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		</div>
+
+		<!-- почему мы -->
+
+		<div class="why_us">
+			<div class="why_us_container">
+				<h2>Почему именно мы?</h2>
+				<div class="why_us_block">
+					<div class="why_us_card">
+						<img src="img/icons/whyus1.svg" alt="whyus1">
+						<div class="why_us_card_text">
+							<h3>Развитая сеть железных дорог</h3>
+							<p>Лишь ключевые особенности структуры проекта представляют собой не что иное, как
+								квинтэссенцию победы</p>
+						</div>
+					</div>
+					<div class="why_us_card">
+						<img src="img/icons/whyus2.svg" alt="whyus2">
+						<div class="why_us_card_text">
+							<h3>Безопасность</h3>
+							<p>В своём стремлении повысить качество жизни, они забывают, что сложившаяся структура
+								организации представляет</p>
+						</div>
+					</div>
+					<div class="why_us_card">
+						<img src="img/icons/whyus3.svg" alt="whyus3">
+						<div class="why_us_card_text">
+							<h3>Всепогодность</h3>
+							<p>В своём стремлении повысить качество жизни, они забывают, что постоянное
+								информационно-пропагандистское</p>
+						</div>
+					</div>
+					<div class="why_us_card">
+						<img src="img/icons/whyus4.svg" alt="whyus4">
+						<div class="why_us_card_text">
+							<h3>Комфорт</h3>
+							<p>В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные
+								прототипы формируют</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- галерея -->
+
+		<div class="galery">
+			<div class="galery_container">
+				<h3>ГАЛЕРЕЯ</h3>
+				<div class="galery_block">
+					<img class="img img1" src="img/photo/train1.png" alt="train">
+					<img class="img img2" src="img/photo/train2.png" alt="train">
+					<img class="img img3" src="img/photo/train3.png" alt="train">
+					<img class="img img4" src="img/photo/train4.png" alt="train">
+					<img class="img img5" src="img/photo/train5.png" alt="train">
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Отзывы -->
+		<div id="reviews" class="reviews">
+			<div class="reviews_container">
+				<div class="baba"><img src="img/photo/Avatar.png" alt="Avatar"></div>
+				<div class="reviews_text">
+					<img src="img/icons/star.svg" alt="star">
+					<p>С РЖД, так уж повелось, меня связывают только позитивные впечатления. Ведь на поезде мы ездим
+						куда-то отдыхать, и это безусловно приятные воспоминания...</p>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+	<footer id="footer" class="footer">
+		<div class="footer_container">
+			<h3>Связь с нами</h3>
+
+			<form class="footer_form">
+				<label class="footer_input">
+					<img src="img/icons/mail.svg" alt="mail">
+					<input type="text" placeholder="yourmail@mail.com"></input>
+				</label>
+				<label>
+					<button type="submit">отправить</button>
+				</label>
+			</form>
+
+			<div class="footer_contats">
+				<p>Телeфон для связи</p>
+				<h5>+79456256617</h5>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script>
+		// профиль
+		const userEnter = document.querySelector('.user');
+		const bacground = document.querySelector('.bacground');
+		const modalUser = document.querySelector('.modal_user');
+
+		userEnter.onclick = function () {
+			bacground.classList.toggle('display_block');
+			modalUser.classList.toggle('display_block');
+		}
+
+		modalUser.addEventListener('click', (e) => {
+			console.log(e.target);
+
+			if (e.target == modalUser) {
+				bacground.classList.remove('display_block');
+				modalUser.classList.remove('active');
+
+			}
+		});
+
+		// корзина
+
+		const cartItems = [];
+		const cartList = document.getElementById('cart-items');
+
+		document.querySelectorAll('.add-to-cart').forEach(button => {
+			button.addEventListener('click', (event) => {
+				const productCard = event.target.closest('.product-card');
+				const productId = productCard.getAttribute('data-id');
+				const productName = productCard.querySelector('h2').innerText;
+				const productPrice = productCard.querySelector('p').innerText
+
+				// Проверка, есть ли товар уже в корзине
+
+				if (!cartItems.some(item => item.id === productId)) {
+					cartItems.push({ id: productId, name: productName, price: productPrice });
+					updateCart();
+				} else {
+					alert(`${productName} уже в корзине!`);
+				}
+			});
+		});
+
+		// Функция для обновления отображения корзины
+		function updateCart() {
+			cartList.innerHTML = '';
+			cartItems.forEach(item => {
+				const li = document.createElement('li');
+				li.innerText = `${item.name} - ${item.price}`;
+				li.innerHTML += ' <button class="remove-from-cart" data-id="' + item.id + '">Удалить</button>';
+				cartList.appendChild(li);
+			});
+
+			// Добавление обработчиков событий на кнопки "Удалить"
+			document.querySelectorAll('.remove-from-cart').forEach(button => {
+				button.addEventListener('click', (event) => {
+					const productId = event.target.getAttribute('data-id');
+					const index = cartItems.findIndex(item => item.id === productId);
+					if (index !== -1) {
+						cartItems.splice(index, 1);
+						updateCart();
+					}
+				});
+			});
+		}
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #ECE0D6;
+	color: #1B1D21;
+  }
+  a{
+	text-decoration: none;
+}
+
+/* окно */
+.bacground{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.47);
+}
+.display_block{
+	display: block;
+}
+.display_flex{
+	display: flex;
+}
+.modal_user{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal_user_form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 25px;
+	width: 600px;
+	height: 400px;
+	background-color: #1F2132;
+}
+.user_form_input{
+	display: block;
+	width: 428px;
+	height: 52px;
+	background-color: #fff;
+	border: none;
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+.modal_user_form a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1F2132;
+	font-family: 'Manrope-Bold', sans-serif;
+	font-size: 18px;
+	width: 267px;
+	height: 67px;
+	background-color: #fff;
+	border-radius: 31px;
+	margin-top: 37px
+}
+.modal_user_form a img{
+	margin-top: 20px;
+	margin-left: 64px;
+}
+/* щапка */
+
+.header_container{
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1364px;
+	height: 84px;
+	border-bottom: 1.05px solid #1B1D21;
+}
+.header_nav{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.logo{
+	font-family: 'Manrope-SemiBold', sans-serif;
+	color: #1B1D21;
+	font-size: 20px;
+	margin-top: -3px;
+}
+.logo img{
+	margin-right: 10px;
+}
+.navbar{
+	margin-left: 80px;
+}
+.menu{
+	border-left: 1px solid  #1B1D21;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 33px;
+	padding-left: 30px;
+	
+}
+.menu li{
+	list-style: none;
+	margin-right: 70px;
+}
+.menu a{
+	font-size: 14px;
+	font-family: 'Manrope-SemiBold', sans-serif;
+	color: #1B1D21;
+}
+.header_user{
+	display: flex;
+	align-items: center;
+}
+.header_user a{
+	font-size: 14px;
+	font-family: 'Manrope-SemiBold', sans-serif;
+	color: #1B1D21;
+	display: flex;
+	align-items: center;
+}
+.cart{
+	margin-left: 70px;
+	margin-right: 20px;
+}
+
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1364px;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 84%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+    font-size: 22px;
+  }
+  #search-container input:focus {
+    border-bottom-color: #222223;
+  }
+  #search-container button {
+    width: 204px;
+	height: 48px;
+	border: 1px solid #C9C9C9;
+	color: #222223;
+	border-radius: 30px;
+	font-family: 'Manrope-Bold', sans-serif;
+	font-size: 16px;
+	margin-top: 30px;
+	transition: 0.3s;
+	cursor: pointer;
+  }
+  .button-value {
+    border: 2px solid #110f29;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #FF825B;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #110f29;
+    color: #ffffff;
+  }
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card {
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  .card:hover {
+    border: 1px solid #FF825B;
+  }
+  .image-container {
+    text-align: center;
+  }
+#product img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container h5 {
+    color: #1F2132;
+	font-family: 'Manrope-Regular', sans-serif;
+	font-size: 20px;
+	margin-top: 16px;
+	margin-bottom: 10px;
+  }
+  .container h6 {
+    font-family: 'Manrope-Regular', sans-serif;
+	font-size: 20px;
+	color: #FF825B;
+    font-weight: 400;
+  }
+  .hide {
+    display: none;
+  }

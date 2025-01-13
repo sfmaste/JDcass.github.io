@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="search.css" />
+  </head>
+  <body>
+    	<!-- Всплывающее окно -->
+	<div class="bacground">
+
+		<div class="modal_user">
+			<form class="modal_user_form">
+				<input class="user_form_input" type="text" placeholder="Логин"></input>
+				<input class="user_form_input" type="password" placeholder="Пароль"></input>
+				<a class="" href="user.html">Войти
+					<img src="img/icons/arrow_right.svg" alt="">
+				</a>
+			</form>
+		</div>
+
+	</div>
+	<!-- Шапка сайта -->
+	<header class="header">
+		<div class="header_container">
+			<div class="header_nav">
+				<a href="index.html" class="logo">
+					<img src="img/icons/logo.svg" alt="logo">
+					станция
+				</a>
+				<navbar class="navbar">
+					<ul class="menu">
+						<li>
+							<a href="search.html">Поиск кассы</a>
+						</li>
+						<li>
+							<a href="user.html">Кабинет</a>
+						</li>
+						<li>
+							<a href="#footer">Контакты</a>
+						</li>
+						<li>
+							<a href="#reviews">Отзывы</a>
+						</li>
+					</ul>
+				</navbar>
+			</div>
+
+			<div class="header_user">
+				<a href="#" class="gps">
+					<img src="img/icons/gps.svg" alt="gps">
+					Кассы
+				</a>
+				<a href="#" class="cart">
+					<img src="img/icons/cart.svg" alt="cart">
+				</a>
+				<a href="#" class="user">
+					<img src="img/icons/user.svg" alt="user">
+				</a>
+			</div>
+		</div>
+	</header>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Название города..."
+        />
+        <button id="search">Найти</button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="scriptsearch.js"></script>
+  </body>
+</html>

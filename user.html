@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЖД Касса</title>
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Всплывающее окно -->
+
+<div class="bacground">
+
+	<div class="modal_user">
+		<form class="modal_user_form">
+			<input class="user_form_input" type="text" placeholder="Логин"></input>
+			<input class="user_form_input" type="password" placeholder="Пароль"></input>
+			<a class="" href="user.html">Войти
+				<img src="img/icons/arrow_right.svg" alt="">
+			</a>
+		</form>
+	</div>
+
+</div>
+
+
+<!-- Шапка сайта -->
+
+
+
+<header class="header">
+	<div class="header_container">
+		<div class="header_nav">
+			<a href="index.html" class="logo">
+				<img src="img/icons/logo.svg" alt="logo">
+				станция
+			</a>
+			<navbar class="navbar">
+				<ul class="menu">
+					<li>
+						<a href="#tickets">Касса</a>
+					</li>
+					<li>
+						<a href="user.html">Кабинет</a>
+					</li>
+					<li>
+						<a href="#footer">Контакты</a>
+					</li>
+					<li>
+						<a href="#reviews">Отзывы</a>
+					</li>
+				</ul>
+			</navbar>
+		</div>
+
+		<div class="header_user">
+			<a href="#" class="gps">
+				<img src="img/icons/gps.svg" alt="gps">
+				Кассы
+			</a>
+			<a href="#" class="cart">
+				<img src="img/icons/cart.svg" alt="cart">
+			</a>
+			<a  href="#" class="user">
+				<img src="img/icons/user.svg" alt="user">
+			</a>
+		</div>
+	</div>
+</header>
+
+<div class="fullscreen">
+<div class="account">
+	<h3>
+		Здравствуйте, Тарас
+	</h3>
+	<form action="" class="account_form">
+		<div class="account_form_block">
+			<p>Фамилия</p>
+			<div class="account_form_input">
+				<p>Уханев</p>
+			</div>
+		</div>
+		<div class="account_form_block">
+			<p>Имя</p>
+			<div class="account_form_input">
+				<p>Тарас</p>
+			</div>
+		</div>
+		<div class="account_form_block">
+			<p>Отчество</p>
+			<div class="account_form_input">
+				<p>Дмитриевич</p>
+			</div>
+		</div>
+		<div class="account_form_block">
+			<p>Телефон</p>
+			<div class="account_form_input">
+				<p>+79535465432</p>
+			</div>
+		</div>
+		
+
+	</form>
+</div>
+
+<div class="line"></div>
+</div>
+
+<script>
+	const userEnter = document.querySelector('.user');
+	const bacground = document.querySelector('.bacground');
+	const modalUser = document.querySelector('.modal_user');
+
+	userEnter.onclick = function(){
+		bacground.classList.toggle('display_block');
+		modalUser.classList.toggle('display_block');
+	}
+
+	modalUser.addEventListener('click', (e) => {
+	console.log(e.target);
+
+	if (e.target == modalUser) {
+		bacground.classList.remove('display_block');
+		modalUser.classList.remove('active');
+		
+	}
+});
+
+</script>
+
+	
+</body>
+</html>
